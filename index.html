@@ -12,6 +12,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=JetBrains+Mono:wght@400;700&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -54,7 +55,7 @@
                 <li>Phantom Jobs automate recurring toil, results into Slack or webhooks.</li>
             </ul>
             <figure class="shot">
-                <img src="assets/img/phantomops.png" alt="PhantomOps chat interface" onerror="this.remove()">
+                <img src="assets/img/phantomops.png" alt="PhantomOps chat interface">
                 <figcaption class="shot-placeholder">PhantomOps screenshot</figcaption>
             </figure>
             <div class="downloads">
@@ -79,7 +80,7 @@
                 <li>Installs as a PWA, or runs as a desktop app.</li>
             </ul>
             <figure class="shot">
-                <img src="assets/img/phantomchat.png" alt="PhantomChat conversation view" onerror="this.remove()">
+                <img src="assets/img/phantomchat.png" alt="PhantomChat conversation view">
                 <figcaption class="shot-placeholder">PhantomChat screenshot</figcaption>
             </figure>
             <div class="downloads">
@@ -120,7 +121,7 @@
                 <li>Native binary for Linux, macOS and Windows.</li>
             </ul>
             <figure class="shot">
-                <img src="assets/img/phantombot.png" alt="Phantombot terminal session" onerror="this.remove()">
+                <img src="assets/img/phantombot.png" alt="Phantombot terminal session">
                 <figcaption class="shot-placeholder">Phantombot screenshot</figcaption>
             </figure>
             <div class="downloads">
@@ -177,5 +178,20 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        // Swap the hatched placeholder for the real screenshot as soon as one
+        // exists in assets/img/. Nothing to configure: drop the file in and
+        // it appears.
+        document.querySelectorAll('.shot img').forEach(function (img) {
+            var caption = img.parentElement.querySelector('.shot-placeholder');
+            if (!caption) return;
+            function show() { caption.hidden = true; img.hidden = false; }
+            img.hidden = true;
+            if (img.complete && img.naturalWidth > 0) { show(); return; }
+            img.addEventListener('load', show);
+            img.addEventListener('error', function () { img.remove(); });
+        });
+    </script>
 </body>
 </html>

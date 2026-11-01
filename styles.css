@@ -235,6 +235,10 @@ h1 {
     height: auto;
 }
 
+.shot-placeholder[hidden] {
+    display: none;
+}
+
 .shot-placeholder {
     display: flex;
     align-items: center;
