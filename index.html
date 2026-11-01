@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Phantomyard | One soul, every surface</title>
-    <meta name="description" content="Phantomyard builds AI you actually control: PhantomOps for centrally managed AI and secrets, PhantomChat for encrypted messaging, Phantombot for an AI teammate on your own box.">
+    <meta name="description" content="Phantomyard builds AI you actually control: PhantomOps, the control plane for your team's secrets and models. PhantomChat, encrypted messaging. Phantombot, an agent on your own box.">
     <meta property="og:title" content="Phantomyard">
-    <meta property="og:description" content="AI you actually control: PhantomOps, PhantomChat and Phantombot.">
+    <meta property="og:description" content="Three phantoms, one stack: PhantomOps, PhantomChat and Phantombot.">
     <meta property="og:url" content="https://phantomyard.ai">
     <meta property="og:type" content="website">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -36,24 +36,61 @@
             <p class="section-eyebrow">AI you actually control</p>
             <h1>Phantomyard.</h1>
             <p class="hero-tagline">One soul, every surface.</p>
-            <p class="hero-sub">Three tools for AI you actually control: centrally managed for your team, end-to-end encrypted for your people, and running on your own box for your agents.</p>
-            <ul class="hero-points">
-                <li><strong>PhantomOps</strong> <span>Central control of your team's AI and secrets.</span></li>
-                <li><strong>PhantomChat</strong> <span>Encrypted messaging with no accounts.</span></li>
-                <li><strong>Phantombot</strong> <span>An AI teammate on your own box.</span></li>
-            </ul>
+            <p class="hero-sub">Three phantoms, one stack. A control plane for your team's AI, a messenger nobody else can read, and an agent that lives on your own box. Different surfaces, the same ghost underneath.</p>
+        </section>
+
+        <!-- The family -->
+        <section class="fam">
+            <div class="fam-grid">
+                <a class="fam-card" href="#phantomops">
+                    <span class="fam-num">01</span>
+                    <span class="fam-name">PhantomOps</span>
+                    <span class="fam-role">Control plane</span>
+                    <span class="fam-text">Secrets, skills and sandboxed AI for your whole team. One bill, per-user limits, every token revocable.</span>
+                </a>
+                <a class="fam-card" href="#phantomchat">
+                    <span class="fam-num">02</span>
+                    <span class="fam-name">PhantomChat</span>
+                    <span class="fam-role">Conversation</span>
+                    <span class="fam-text">End-to-end encrypted chat over Nostr. No accounts, no phone number, no server of ours in the middle.</span>
+                </a>
+                <a class="fam-card" href="#phantombot">
+                    <span class="fam-num">03</span>
+                    <span class="fam-name">Phantombot</span>
+                    <span class="fam-role">Agent runtime</span>
+                    <span class="fam-text">Your AI teammate, armored and remembered, running on your own hardware with your own keys.</span>
+                </a>
+            </div>
         </section>
 
         <!-- PhantomOps -->
         <section class="product" id="phantomops">
             <p class="section-eyebrow">01 / PhantomOps</p>
-            <h2>One place to control your team's AI.</h2>
-            <p class="lede">PhantomOps is a centrally managed vault of secrets and AI skills for enterprise teams. Create a user, hand them a token, and they code with any OpenAI-completions client, PhantomChat, or a chatbox you drop into your own app. Every user gets their own vault and a sandboxed instance.</p>
+            <h2>Your team's AI, on a short leash.</h2>
+            <p class="lede">PhantomOps is the control plane for enterprise AI. It hands out the identity, the secrets and the sandbox, then gets out of the way: your people use any OpenAI-compatible client, PhantomChat, or a chatbox you drop into your own product, and every request passes through one gate you own.</p>
+
+            <div class="flow">
+                <div class="flow-node">
+                    <p class="flow-title">Your people, your apps</p>
+                    <p class="flow-sub">Any OpenAI-completions client, PhantomChat, or an embedded chatbox</p>
+                </div>
+                <div class="flow-arrow" aria-hidden="true">&rarr;</div>
+                <div class="flow-node flow-core">
+                    <p class="flow-title">PhantomOps</p>
+                    <p class="flow-sub">Token, budget, threat screen, per-user vault</p>
+                </div>
+                <div class="flow-arrow" aria-hidden="true">&rarr;</div>
+                <div class="flow-node">
+                    <p class="flow-title">Any model</p>
+                    <p class="flow-sub">Pooled provider access, one bill</p>
+                </div>
+            </div>
+
             <ul class="hero-points">
-                <li>Low-cost AI for the whole team: pooled provider access, one bill, per-user limits.</li>
-                <li>A private vault and a sandboxed instance per user, so access is scoped, revocable and simple.</li>
-                <li>Skills packaged once against your enterprise apps, then inherited by everyone who needs them.</li>
-                <li>Drop an AI chatbox into your own product, with threat protection in front of every call.</li>
+                <li><strong>Low-cost AI for the whole team.</strong> Pooled provider access, one invoice, per-user limits and spend caps you set.</li>
+                <li><strong>A vault and a sandbox per user.</strong> Each person gets their own secrets and an isolated instance. Access is scoped, revocable and simple to reason about.</li>
+                <li><strong>Skills packaged once.</strong> Wrap the enterprise apps you already run, then let the whole team inherit the same skills instead of each rebuilding them.</li>
+                <li><strong>AI in your own product.</strong> Drop in a chatbox with the full stack behind it and threat protection in front of every call.</li>
             </ul>
             <figure class="shot">
                 <img src="assets/img/phantomops.png" alt="PhantomOps chat interface">
@@ -64,7 +101,7 @@
                 <div class="buttons">
                     <a class="btn btn-primary" href="https://phantomops.app">Open PhantomOps</a>
                 </div>
-                <p class="cta-note">Fully hosted at <a href="https://phantomops.app">phantomops.app</a>. We run it, you get the control panel: no installs, no servers to babysit.</p>
+                <p class="cta-note">Fully hosted at <a href="https://phantomops.app">phantomops.app</a>. Nothing to install, nothing to babysit. You get the control panel and the bill you can predict.</p>
             </div>
         </section>
 
@@ -72,11 +109,12 @@
         <section class="product" id="phantomchat">
             <p class="section-eyebrow">02 / PhantomChat</p>
             <h2>Messaging nobody else can read.</h2>
-            <p class="lede">Peer-to-peer encrypted chat over Nostr relays. No accounts, no phone number, no servers we operate. Your identity is a key you hold.</p>
+            <p class="lede">Peer-to-peer encrypted chat over Nostr relays. No accounts, no phone number, no servers we operate. Your identity is a key you hold, and it doubles as your front door to the team's AI.</p>
             <ul class="hero-points">
-                <li>End-to-end encryption with NIP-44, wrapped in NIP-17 gift-wrap.</li>
-                <li>Relay operators see opaque blobs, not sender, recipient or content.</li>
-                <li>Installs as a PWA, or runs as a desktop app.</li>
+                <li><strong>End-to-end by construction.</strong> NIP-44 encryption inside NIP-17 gift wrap, so relay operators see opaque blobs.</li>
+                <li><strong>No signup.</strong> A key pair is the account. Lose the device, keep the identity.</li>
+                <li><strong>Chat and agents in one window.</strong> Point it at PhantomOps and your teammates, groups and AI share the same conversation surface.</li>
+                <li><strong>Everywhere you are.</strong> Runs in the browser as a PWA, or as a desktop app with native notifications.</li>
             </ul>
             <figure class="shot">
                 <img src="assets/img/phantomchat.png" alt="PhantomChat conversation view">
@@ -115,9 +153,10 @@
             <h2>Your AI teammate, on your box.</h2>
             <p class="lede">Armors your harness, learns your world, zero context tax. A security perimeter and a memory in front of Claude Code, Codex or Pi, with your keys on your hardware.</p>
             <ul class="hero-points">
-                <li>Runs on your machine, with your provider keys, no telemetry.</li>
-                <li>Two-tier trust, a threat judge, and durable memory.</li>
-                <li>Native binary for Linux, macOS and Windows.</li>
+                <li><strong>Yours end to end.</strong> Runs on your machine, with your provider keys, no telemetry leaving the box.</li>
+                <li><strong>Two-tier trust.</strong> A threat judge reads untrusted input before it can reach a capable agent.</li>
+                <li><strong>Memory that lasts.</strong> A journal, structured drawers and a knowledge base, so tomorrow's session starts where today's ended.</li>
+                <li><strong>Harness agnostic.</strong> One soul, every surface: TUI, Telegram, web, or whatever you wire up next.</li>
             </ul>
             <figure class="shot">
                 <img src="assets/img/phantombot.png" alt="Phantombot terminal session">
@@ -160,6 +199,18 @@
                 </div>
                 <p class="cta-note">The installers fetch the latest verified release and register the platform service. TUI runs with a bare <code>phantombot</code>; <a href="https://github.com/phantomyard/phantombot/blob/main/docs/reference/tui-keys.md">keybindings</a> &#183; <a href="https://github.com/phantomyard/phantombot/releases/download/v1.1.461/SHA256SUMS">checksums</a> &#183; <a href="https://phantombot.bot">full tour at phantombot.bot</a></p>
             </div>
+        </section>
+
+        <!-- How they fit -->
+        <section class="product" id="yard">
+            <p class="section-eyebrow">04 / The yard</p>
+            <h2>One yard, three phantoms.</h2>
+            <p class="lede">PhantomOps issues the identity, the secrets and the sandbox. PhantomChat carries the conversation. Phantombot carries the work. Same soul, whichever surface your team happens to be on.</p>
+            <ul class="hero-points">
+                <li><strong>Start with PhantomOps</strong> if you have a team, a bill and a compliance question.</li>
+                <li><strong>Start with PhantomChat</strong> if you want a conversation nobody can read.</li>
+                <li><strong>Start with Phantombot</strong> if you want an agent that remembers your world and runs on your metal.</li>
+            </ul>
         </section>
     </main>
 
