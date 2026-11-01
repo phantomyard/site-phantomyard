@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phantomyard | One soul, every surface</title>
+    <meta name="description" content="Phantomyard builds local-first AI software: PhantomOps, PhantomChat and Phantombot. Your hardware, your keys, zero context tax.">
+    <meta property="og:title" content="Phantomyard">
+    <meta property="og:description" content="Local-first AI software: PhantomOps, PhantomChat and Phantombot.">
+    <meta property="og:url" content="https://phantomyard.ai">
+    <meta property="og:type" content="website">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=JetBrains+Mono:wght@400;700&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a class="logo" href="#top">
+                <span class="logo-mark">PY</span>
+                <span>Phantomyard</span>
+            </a>
+            <div class="links">
+                <a href="#phantomops">PhantomOps</a>
+                <a href="#phantomchat">PhantomChat</a>
+                <a href="#phantombot">Phantombot</a>
+                <a href="https://github.com/phantomyard">GitHub</a>
+            </div>
+        </nav>
+    </header>
+
+    <main id="top">
+        <section class="hero crooked">
+            <p class="section-eyebrow">Local-first AI software</p>
+            <h1>Phantomyard.</h1>
+            <p class="hero-tagline">One soul, every surface.</p>
+            <p class="hero-sub">Three tools that keep your data on your own hardware: run your business, talk to your people, and drive your coding agents.</p>
+            <ul class="hero-points">
+                <li><strong>PhantomOps</strong> <span>Run your ERP by conversation.</span></li>
+                <li><strong>PhantomChat</strong> <span>Encrypted messaging with no accounts.</span></li>
+                <li><strong>Phantombot</strong> <span>An AI teammate on your own box.</span></li>
+            </ul>
+        </section>
+
+        <!-- PhantomOps -->
+        <section class="product" id="phantomops">
+            <p class="section-eyebrow">01 / PhantomOps</p>
+            <h2>Your ERP, by conversation.</h2>
+            <p class="lede">An AI agent deployed against ERPNEXT, Odoo and friends. Ask for a report, update a record, schedule a recurring job. It learns your business rules and remembers them.</p>
+            <ul class="hero-points">
+                <li>Full read and write access through per-user tokens.</li>
+                <li>Multi-tenant, with complete data isolation per workspace.</li>
+                <li>Phantom Jobs automate recurring toil, results into Slack or webhooks.</li>
+            </ul>
+            <figure class="shot">
+                <img src="assets/img/phantomops.png" alt="PhantomOps chat interface" onerror="this.remove()">
+                <figcaption class="shot-placeholder">PhantomOps screenshot</figcaption>
+            </figure>
+            <div class="downloads">
+                <p class="cta-label">Get PhantomOps</p>
+                <div class="buttons">
+                    <a class="btn btn-primary" href="https://phantomops.app">Open PhantomOps</a>
+                    <a class="btn" href="https://github.com/phantomyard/phantomops">Docker / self-host</a>
+                    <a class="btn" href="https://github.com/phantomyard/phantomops">Source</a>
+                </div>
+                <p class="cta-note">Hosted at <a href="https://phantomops.app">phantomops.app</a>, or run it on your own box with <strong>docker compose</strong>.</p>
+            </div>
+        </section>
+
+        <!-- PhantomChat -->
+        <section class="product" id="phantomchat">
+            <p class="section-eyebrow">02 / PhantomChat</p>
+            <h2>Messaging nobody else can read.</h2>
+            <p class="lede">Peer-to-peer encrypted chat over Nostr relays. No accounts, no phone number, no servers we operate. Your identity is a key you hold.</p>
+            <ul class="hero-points">
+                <li>End-to-end encryption with NIP-44, wrapped in NIP-17 gift-wrap.</li>
+                <li>Relay operators see opaque blobs, not sender, recipient or content.</li>
+                <li>Installs as a PWA, or runs as a desktop app.</li>
+            </ul>
+            <figure class="shot">
+                <img src="assets/img/phantomchat.png" alt="PhantomChat conversation view" onerror="this.remove()">
+                <figcaption class="shot-placeholder">PhantomChat screenshot</figcaption>
+            </figure>
+            <div class="downloads">
+                <p class="cta-label">Get PhantomChat</p>
+                <div class="buttons">
+                    <a class="btn btn-primary" href="https://chat.phantomyard.ai">Open in browser (PWA)</a>
+                </div>
+                <div class="platform-grid">
+                    <div class="platform">
+                        <p class="platform-head"><span class="platform-badge">Linux</span></p>
+                        <a class="btn" href="https://github.com/phantomyard/phantomchat/releases/download/phantomchat-v1.1.104/PhantomChat-1.1.104.AppImage">AppImage <span class="arch">x64</span></a>
+                        <a class="btn" href="https://github.com/phantomyard/phantomchat/releases/download/phantomchat-v1.1.104/phantomchat_1.1.104_amd64.deb">.deb <span class="arch">x64</span></a>
+                        <a class="btn" href="https://github.com/phantomyard/phantomchat/releases/download/phantomchat-v1.1.104/phantomchat_1.1.104_x86_64.rpm">.rpm <span class="arch">x64</span></a>
+                    </div>
+                    <div class="platform">
+                        <p class="platform-head"><span class="platform-badge">macOS</span></p>
+                        <a class="btn" href="https://github.com/phantomyard/phantomchat/releases/download/phantomchat-v1.1.104/PhantomChat-1.1.104-arm64.dmg">Disk image <span class="arch">Apple Silicon</span></a>
+                        <a class="btn" href="https://github.com/phantomyard/phantomchat/releases/download/phantomchat-v1.1.104/PhantomChat-1.1.104-x64.dmg">Disk image <span class="arch">Intel</span></a>
+                    </div>
+                    <div class="platform">
+                        <p class="platform-head"><span class="platform-badge">Windows</span></p>
+                        <a class="btn" href="https://github.com/phantomyard/phantomchat/releases/download/phantomchat-v1.1.104/PhantomChat-1.1.104-windows-x64.exe">Installer <span class="arch">x64</span></a>
+                        <a class="btn" href="https://github.com/phantomyard/phantomchat/releases/download/phantomchat-v1.1.104/PhantomChat-1.1.104-windows-arm64.exe">Installer <span class="arch">ARM64</span></a>
+                    </div>
+                </div>
+                <p class="cta-note">Desktop v1.1.104. <a href="https://github.com/phantomyard/phantomchat/releases">All releases and checksums</a> &#183; <strong>Early alpha</strong>, expect rough edges.</p>
+            </div>
+        </section>
+
+        <!-- Phantombot -->
+        <section class="product" id="phantombot">
+            <p class="section-eyebrow">03 / Phantombot</p>
+            <h2>Your AI teammate, on your box.</h2>
+            <p class="lede">Armors your harness, learns your world, zero context tax. A security perimeter and a memory in front of Claude Code, Codex or Pi, with your keys on your hardware.</p>
+            <ul class="hero-points">
+                <li>Runs on your machine, with your provider keys, no telemetry.</li>
+                <li>Two-tier trust, a threat judge, and durable memory.</li>
+                <li>Native binary for Linux, macOS and Windows.</li>
+            </ul>
+            <figure class="shot">
+                <img src="assets/img/phantombot.png" alt="Phantombot terminal session" onerror="this.remove()">
+                <figcaption class="shot-placeholder">Phantombot screenshot</figcaption>
+            </figure>
+            <div class="downloads">
+                <p class="cta-label">Get Phantombot</p>
+                <div class="platform-grid">
+                    <div class="platform">
+                        <p class="platform-head"><span class="platform-badge">Linux</span></p>
+                        <a class="btn" href="https://github.com/phantomyard/phantombot/releases/download/v1.1.461/phantombot-v1.1.461-linux-x64">Binary <span class="arch">x64</span></a>
+                        <a class="btn" href="https://github.com/phantomyard/phantombot/releases/download/v1.1.461/phantombot-v1.1.461-linux-arm64">Binary <span class="arch">ARM64</span></a>
+                        <a class="install-link" href="#install-phantombot">Terminal install &darr;</a>
+                    </div>
+                    <div class="platform">
+                        <p class="platform-head"><span class="platform-badge">macOS</span></p>
+                        <a class="btn" href="https://github.com/phantomyard/phantombot/releases/download/v1.1.461/phantombot-v1.1.461-darwin-arm64">Binary <span class="arch">Apple Silicon</span></a>
+                        <a class="btn" href="https://github.com/phantomyard/phantombot/releases/download/v1.1.461/phantombot-v1.1.461-darwin-x64">Binary <span class="arch">Intel</span></a>
+                        <a class="install-link" href="#install-phantombot">Terminal install &darr;</a>
+                    </div>
+                    <div class="platform">
+                        <p class="platform-head"><span class="platform-badge">Windows</span></p>
+                        <a class="btn" href="https://github.com/phantomyard/phantombot/releases/download/v1.1.461/phantombot-v1.1.461-windows-x64.exe">Binary <span class="arch">x64</span></a>
+                        <a class="btn" href="https://github.com/phantomyard/phantombot/releases/download/v1.1.461/phantombot-v1.1.461-windows-arm64.exe">Binary <span class="arch">ARM64</span></a>
+                        <a class="install-link" href="#install-phantombot">Terminal install &darr;</a>
+                    </div>
+                </div>
+                <div class="install-strip" id="install-phantombot">
+                    <p class="install-label">CLI / TUI install</p>
+                    <div class="install-cmds">
+                        <div>
+                            <p class="install-os">Linux &amp; macOS</p>
+                            <pre class="install-pre"><code>curl -fsSL https://raw.githubusercontent.com/phantomyard/phantombot/main/install.sh | sh</code></pre>
+                        </div>
+                        <div>
+                            <p class="install-os">Windows (PowerShell)</p>
+                            <pre class="install-pre"><code>iex ((iwr -useb https://raw.githubusercontent.com/phantomyard/phantombot/main/install.ps1).Content.TrimStart([char]0xFEFF))</code></pre>
+                        </div>
+                    </div>
+                </div>
+                <p class="cta-note">The installers fetch the latest verified release and register the platform service. TUI runs with a bare <code>phantombot</code>; <a href="https://github.com/phantomyard/phantombot/blob/main/docs/reference/tui-keys.md">keybindings</a> &#183; <a href="https://github.com/phantomyard/phantombot/releases/download/v1.1.461/SHA256SUMS">checksums</a> &#183; <a href="https://phantombot.bot">full tour at phantombot.bot</a></p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-inner">
+            <div>
+                <p class="logo"><span class="logo-mark">PY</span><span>Phantomyard</span></p>
+                <p class="muted">Hodges Enterprises BV, Arnhem, NL</p>
+            </div>
+            <div class="footer-links">
+                <a href="https://github.com/phantomyard/phantomops">PhantomOps</a>
+                <a href="https://github.com/phantomyard/phantomchat">PhantomChat</a>
+                <a href="https://github.com/phantomyard/phantombot">Phantombot</a>
+                <a href="https://phantombot.bot">phantombot.bot</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
