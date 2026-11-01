@@ -456,6 +456,129 @@ code {
     color: #9fd8a3;
 }
 
+/* ---------- the three phantoms ---------- */
+
+.fam {
+    padding: 0 0 1rem;
+}
+
+.fam-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.fam-card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+    padding: 1.35rem;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    background: rgba(13, 17, 23, 0.55);
+    text-decoration: none;
+    color: var(--fg);
+    transition: border-color 0.2s ease, transform 0.2s ease, background 0.2s ease;
+}
+
+.fam-card:hover {
+    border-color: rgba(63, 185, 80, 0.55);
+    transform: translateY(-3px);
+    background: rgba(63, 185, 80, 0.05);
+}
+
+.fam-num {
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    color: var(--accent);
+    letter-spacing: 1px;
+}
+
+.fam-name {
+    font-family: var(--font-mono);
+    font-size: 1.1rem;
+    font-weight: bold;
+    letter-spacing: -0.5px;
+}
+
+.fam-role {
+    font-family: var(--font-mono);
+    font-size: 0.62rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: var(--muted);
+    margin-bottom: 0.5rem;
+}
+
+.fam-text {
+    font-size: 0.88rem;
+    color: var(--muted);
+    line-height: 1.55;
+}
+
+/* ---------- request flow ---------- */
+
+.flow {
+    display: flex;
+    align-items: stretch;
+    gap: 0.75rem;
+    margin-bottom: 2.5rem;
+}
+
+.flow-node {
+    flex: 1 1 0;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 1rem;
+    background: rgba(13, 17, 23, 0.55);
+}
+
+.flow-core {
+    border-color: rgba(63, 185, 80, 0.5);
+    background: rgba(63, 185, 80, 0.07);
+    box-shadow: 0 0 26px rgba(63, 185, 80, 0.12);
+}
+
+.flow-title {
+    font-family: var(--font-mono);
+    font-size: 0.78rem;
+    color: var(--fg);
+    margin-bottom: 0.3rem;
+}
+
+.flow-core .flow-title {
+    color: var(--accent);
+}
+
+.flow-sub {
+    font-size: 0.76rem;
+    color: var(--muted);
+    line-height: 1.45;
+}
+
+.flow-arrow {
+    display: flex;
+    align-items: center;
+    color: var(--muted);
+    font-family: var(--font-mono);
+    font-size: 1rem;
+}
+
+@media (max-width: 860px) {
+    .fam-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .flow {
+        flex-direction: column;
+    }
+
+    .flow-arrow {
+        justify-content: center;
+        transform: rotate(90deg);
+    }
+}
+
 /* ---------- footer ---------- */
 
 footer {
