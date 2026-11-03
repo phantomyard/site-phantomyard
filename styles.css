@@ -255,6 +255,12 @@ h1 {
 
 /* ---------- downloads ---------- */
 
+/* Every product now leads with its download block, so give it room to breathe
+   before whatever follows. */
+.product .downloads {
+    margin-bottom: 2.75rem;
+}
+
 .cta-label {
     font-family: var(--font-mono);
     font-size: 0.75rem;
