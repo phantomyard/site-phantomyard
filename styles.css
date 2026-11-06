@@ -617,21 +617,36 @@ footer {
     font-size: 0.85rem;
 }
 
-.footer-links {
+.footer-cols {
     display: flex;
-    gap: 1.5rem;
+    gap: 3.5rem;
     flex-wrap: wrap;
     font-family: var(--font-mono);
     font-size: 0.8rem;
 }
 
-.footer-links a {
+.footer-col {
+    display: flex;
+    flex-direction: column;
+    gap: 0.55rem;
+    min-width: 9rem;
+}
+
+.footer-head {
+    color: var(--fg);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.7rem;
+    margin-bottom: 0.25rem;
+}
+
+.footer-col a {
     color: var(--muted);
     text-decoration: none;
 }
 
-.footer-links a:hover {
-    color: var(--fg);
+.footer-col a:hover {
+    color: var(--accent);
 }
 
 @media (max-width: 860px) {
@@ -663,5 +678,13 @@ footer {
 
     .product {
         padding: 3rem 0;
+    }
+
+    .footer-cols {
+        gap: 1.75rem 2.5rem;
+    }
+
+    .footer-col {
+        min-width: 7.5rem;
     }
 }
