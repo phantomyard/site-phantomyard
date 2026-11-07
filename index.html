@@ -348,9 +348,8 @@
                 return BASE + version + '/' + file.split('VER').join(version);
             }
 
-            function detect(ua, platform) {
+            function detect(ua) {
                 ua = (ua || '').toLowerCase();
-                platform = (platform || '').toLowerCase();
                 if (/android/.test(ua)) return 'other';
                 if (/windows|win32|win64/.test(ua)) return 'windows';
                 // iPadOS reports a Mac desktop UA, so touch points beat the UA.
@@ -359,9 +358,9 @@
                     return (navigator.maxTouchPoints || 0) > 1 ? 'other' : 'mac';
                 }
                 if (/linux|x11|bsd|cros/.test(ua)) return 'linux';
-                if (/win/.test(platform)) return 'windows';
-                if (/mac|ios/.test(platform)) return 'mac';
-                if (/linux|x11|bsd|cros/.test(platform)) return 'linux';
+                // No OS token in the UA: a console, a car, a bot. Every desktop
+                // browser names its OS, and navigator.platform lies often enough
+                // (headless Chrome says Win32 on Linux) that it is not a fallback.
                 return 'other';
             }
 
@@ -395,7 +394,7 @@
                 }
             }
 
-            var os = detect(navigator.userAgent, navigator.platform);
+            var os = detect(navigator.userAgent);
             apply(os, 'unknown');
 
             var data = navigator.userAgentData;
