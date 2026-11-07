@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Phantomyard | The human-agent interface</title>
-    <meta name="description" content="Phantomyard builds the human-agent interface: PhantomChat, where people and agents share one encrypted conversation. PhantomOps, the control plane that keeps the AI on a leash. Phantombot, the agent runtime on your own metal.">
+    <meta name="description" content="Phantomyard builds the human-agent interface: Phantomyard Desktop, where people and agents share one encrypted workspace. PhantomOps, the control plane that keeps the AI on a leash. Phantombot, the agent runtime on your own metal.">
     <meta property="og:title" content="Phantomyard">
-    <meta property="og:description" content="The human-agent interface: PhantomChat, PhantomOps and Phantombot.">
+    <meta property="og:description" content="The human-agent interface: Phantomyard Desktop, PhantomOps and Phantombot.">
     <meta property="og:url" content="https://phantomyard.ai">
     <meta property="og:type" content="website">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,8 +23,8 @@
                 <span>Phantomyard</span>
             </a>
             <div class="links">
+                <a href="#desktop">Phantomyard Desktop</a>
                 <a href="#phantomops">PhantomOps</a>
-                <a href="#phantomchat">PhantomChat</a>
                 <a href="#phantombot">Phantombot</a>
                 <a href="#phantomtools">PhantomTools</a>
                 <a href="https://github.com/phantomyard">GitHub</a>
@@ -37,23 +37,23 @@
             <p class="section-eyebrow">AI you actually control</p>
             <h1>Phantomyard.</h1>
             <p class="hero-tagline">The human-agent interface.</p>
-            <p class="hero-sub">One company, three phantoms. PhantomChat is where people and agents share one conversation, PhantomOps is the control plane that keeps their AI on a leash, and Phantombot is the agent runtime on your own metal. Different surfaces, the same ghost underneath.</p>
+            <p class="hero-sub">One company, three phantoms. Phantomyard Desktop is where people and agents share one workspace, PhantomOps is the control plane that keeps their AI on a leash, and Phantombot is the agent runtime on your own metal. Different surfaces, the same ghost underneath.</p>
         </section>
 
         <!-- The family -->
         <section class="fam">
             <div class="fam-grid">
-                <a class="fam-card" href="#phantomops">
+                <a class="fam-card" href="#desktop">
                     <span class="fam-num">01</span>
+                    <span class="fam-name">Phantomyard Desktop</span>
+                    <span class="fam-role">The workspace</span>
+                    <span class="fam-text">Spin up agent personas on any provider, hand them your tools, and work beside them. The same window on your phone is the remote control.</span>
+                </a>
+                <a class="fam-card" href="#phantomops">
+                    <span class="fam-num">02</span>
                     <span class="fam-name">PhantomOps</span>
                     <span class="fam-role">Control plane</span>
                     <span class="fam-text">Secrets, skills and sandboxed AI for your whole team. One bill, per-user limits, every token revocable.</span>
-                </a>
-                <a class="fam-card" href="#phantomchat">
-                    <span class="fam-num">02</span>
-                    <span class="fam-name">PhantomChat</span>
-                    <span class="fam-role">The front door</span>
-                    <span class="fam-text">Where people and agents share one conversation. End-to-end encrypted over Nostr. No accounts, no phone number, no server of ours in the middle.</span>
                 </a>
                 <a class="fam-card" href="#phantombot">
                     <span class="fam-num">03</span>
@@ -64,9 +64,52 @@
             </div>
         </section>
 
+        <!-- Phantomyard Desktop -->
+        <section class="product" id="desktop">
+            <p class="section-eyebrow">01 / Phantomyard Desktop</p>
+            <h2>Every agent you run, in one window.</h2>
+            <p class="lede">Phantomyard Desktop is the agent workspace on your machine. Spin up a persona on any provider, hand it the tools on this PC, and work beside it with the humans on your team. The room you share is PhantomChat, peer-to-peer encrypted, so the front door to your agents is a conversation nobody else can read.</p>
+            <div class="downloads">
+                <p class="cta-label">Get Phantomyard Desktop</p>
+                <div class="buttons">
+                    <a class="btn btn-primary" href="https://chat.phantomyard.ai">Open the PWA (remote control)</a>
+                </div>
+                <p class="cta-label cta-label-sub">Desktop app</p>
+                <div class="platform-grid">
+                    <div class="platform">
+                        <p class="platform-head"><span class="platform-badge">Linux</span></p>
+                        <a class="btn" href="https://github.com/phantomyard/phantomchat/releases/download/phantomchat-v1.1.109/PhantomChat-1.1.109.AppImage">AppImage <span class="arch">x64</span></a>
+                        <a class="btn" href="https://github.com/phantomyard/phantomchat/releases/download/phantomchat-v1.1.109/phantomchat_1.1.109_amd64.deb">.deb <span class="arch">x64</span></a>
+                        <a class="btn" href="https://github.com/phantomyard/phantomchat/releases/download/phantomchat-v1.1.109/phantomchat_1.1.109_x86_64.rpm">.rpm <span class="arch">x64</span></a>
+                    </div>
+                    <div class="platform">
+                        <p class="platform-head"><span class="platform-badge">macOS</span></p>
+                        <a class="btn" href="https://github.com/phantomyard/phantomchat/releases/download/phantomchat-v1.1.109/PhantomChat-1.1.109-arm64.dmg">Disk image <span class="arch">Apple Silicon</span></a>
+                        <a class="btn" href="https://github.com/phantomyard/phantomchat/releases/download/phantomchat-v1.1.109/PhantomChat-1.1.109-x64.dmg">Disk image <span class="arch">Intel</span></a>
+                    </div>
+                    <div class="platform">
+                        <p class="platform-head"><span class="platform-badge">Windows</span></p>
+                        <a class="btn" href="https://github.com/phantomyard/phantomchat/releases/download/phantomchat-v1.1.109/PhantomChat-1.1.109-windows-x64.exe">Installer <span class="arch">x64</span></a>
+                        <a class="btn" href="https://github.com/phantomyard/phantomchat/releases/download/phantomchat-v1.1.109/PhantomChat-1.1.109-windows-arm64.exe">Installer <span class="arch">ARM64</span></a>
+                    </div>
+                </div>
+                <p class="cta-note">Desktop v<span data-pc-version>1.1.109</span>. <a href="https://github.com/phantomyard/phantomchat/releases">All releases and checksums</a> &#183; <strong>Early alpha</strong>, expect rough edges.</p>
+            </div>
+            <ul class="hero-points">
+                <li><strong>Any provider, your key.</strong> Pick the provider, paste the key, choose a model. Each persona keeps its own credentials in an encrypted vault on your disk.</li>
+                <li><strong>Agents with hands.</strong> A Provider contact runs on this PC with the persona's full tools, so it reads the repo, runs the command and edits the file.</li>
+                <li><strong>Humans and agents, one room.</strong> Phantom, Human and Provider contacts share the same sessions, so a group can hold a teammate, their phantom and their agent.</li>
+                <li><strong>Your phone is the remote control.</strong> The PWA talks to the same personas over encrypted relays, so you can steer the agents running at home from anywhere, with no open port and no VPN.</li>
+            </ul>
+            <figure class="shot">
+                <img src="assets/img/phantomyard-desktop.png" alt="Phantomyard Desktop, agents and conversations in one window">
+                <figcaption class="shot-placeholder">Phantomyard Desktop screenshot</figcaption>
+            </figure>
+        </section>
+
         <!-- PhantomOps -->
         <section class="product" id="phantomops">
-            <p class="section-eyebrow">01 / PhantomOps</p>
+            <p class="section-eyebrow">02 / PhantomOps</p>
             <h2>Your team's AI, on a short leash.</h2>
             <p class="lede">PhantomOps is the control plane for enterprise AI. It hands out the identity, the secrets and the sandbox, then gets out of the way: your people use any OpenAI-compatible client, PhantomChat, or a chatbox you drop into your own product, and every request passes through one gate you own.</p>
             <div class="downloads">
@@ -106,48 +149,6 @@
             </figure>
         </section>
 
-        <!-- PhantomChat -->
-        <section class="product" id="phantomchat">
-            <p class="section-eyebrow">02 / PhantomChat</p>
-            <h2>Where the human meets the agent.</h2>
-            <p class="lede">PhantomChat is the human-agent interface: one window built for people and agents to share, peer-to-peer encrypted over Nostr relays. No accounts, no phone number, no servers we operate. Your identity is a key you hold, and it doubles as your front door to the team's AI.</p>
-            <div class="downloads">
-                <p class="cta-label">Get PhantomChat</p>
-                <div class="buttons">
-                    <a class="btn btn-primary" href="https://chat.phantomyard.ai">Open in browser (PWA)</a>
-                </div>
-                <p class="cta-label cta-label-sub">Desktop app</p>
-                <div class="platform-grid">
-                    <div class="platform">
-                        <p class="platform-head"><span class="platform-badge">Linux</span></p>
-                        <a class="btn" href="https://github.com/phantomyard/phantomchat/releases/download/phantomchat-v1.1.109/PhantomChat-1.1.109.AppImage">AppImage <span class="arch">x64</span></a>
-                        <a class="btn" href="https://github.com/phantomyard/phantomchat/releases/download/phantomchat-v1.1.109/phantomchat_1.1.109_amd64.deb">.deb <span class="arch">x64</span></a>
-                        <a class="btn" href="https://github.com/phantomyard/phantomchat/releases/download/phantomchat-v1.1.109/phantomchat_1.1.109_x86_64.rpm">.rpm <span class="arch">x64</span></a>
-                    </div>
-                    <div class="platform">
-                        <p class="platform-head"><span class="platform-badge">macOS</span></p>
-                        <a class="btn" href="https://github.com/phantomyard/phantomchat/releases/download/phantomchat-v1.1.109/PhantomChat-1.1.109-arm64.dmg">Disk image <span class="arch">Apple Silicon</span></a>
-                        <a class="btn" href="https://github.com/phantomyard/phantomchat/releases/download/phantomchat-v1.1.109/PhantomChat-1.1.109-x64.dmg">Disk image <span class="arch">Intel</span></a>
-                    </div>
-                    <div class="platform">
-                        <p class="platform-head"><span class="platform-badge">Windows</span></p>
-                        <a class="btn" href="https://github.com/phantomyard/phantomchat/releases/download/phantomchat-v1.1.109/PhantomChat-1.1.109-windows-x64.exe">Installer <span class="arch">x64</span></a>
-                        <a class="btn" href="https://github.com/phantomyard/phantomchat/releases/download/phantomchat-v1.1.109/PhantomChat-1.1.109-windows-arm64.exe">Installer <span class="arch">ARM64</span></a>
-                    </div>
-                </div>
-                <p class="cta-note">Desktop v<span data-pc-version>1.1.109</span>. <a href="https://github.com/phantomyard/phantomchat/releases">All releases and checksums</a> &#183; <strong>Early alpha</strong>, expect rough edges.</p>
-            </div>
-            <ul class="hero-points">
-                <li><strong>End-to-end by construction.</strong> NIP-44 encryption inside NIP-17 gift wrap, so relay operators see opaque blobs.</li>
-                <li><strong>No signup.</strong> A key pair is the account. Lose the device, keep the identity.</li>
-                <li><strong>Chat and agents in one window.</strong> Point it at PhantomOps and your teammates, groups and AI share the same conversation surface.</li>
-                <li><strong>Everywhere you are.</strong> Runs in the browser as a PWA, or as a desktop app with native notifications.</li>
-            </ul>
-            <figure class="shot">
-                <img src="assets/img/phantomchat.png" alt="PhantomChat conversation view">
-                <figcaption class="shot-placeholder">PhantomChat screenshot</figcaption>
-            </figure>
-        </section>
 
         <!-- Phantombot -->
         <section class="product" id="phantombot">
@@ -178,7 +179,7 @@
                 <li><strong>Harness agnostic.</strong> One soul, every surface: TUI, Telegram, web, or whatever you wire up next.</li>
             </ul>
             <figure class="shot">
-                <img src="assets/img/phantombot.png" alt="Phantombot terminal session">
+                <img src="assets/img/phantombot.png" alt="Phantombot doctor: runtime health check across core, channels and integrations">
                 <figcaption class="shot-placeholder">Phantombot screenshot</figcaption>
             </figure>
         </section>
@@ -187,11 +188,11 @@
         <section class="product" id="yard">
             <p class="section-eyebrow">04 / The yard</p>
             <h2>Three phantoms, one interface.</h2>
-            <p class="lede">PhantomOps issues the identity, the secrets and the sandbox. PhantomChat is where people and agents meet. Phantombot carries the work away from the chat. One interface over three surfaces, whichever one your team happens to be on.</p>
+            <p class="lede">Phantomyard Desktop puts your agents in one window and your people beside them. PhantomOps issues the identity, the secrets and the sandbox. Phantombot carries the work away from the chat. One interface over three surfaces, whichever one your team happens to be on.</p>
             <ul class="hero-points">
+                <li><strong>Start with Phantomyard Desktop</strong> if you want agents on your own PC and a phone that can reach them.</li>
                 <li><strong>Start with PhantomOps</strong> if you have a team, a bill and a compliance question.</li>
-                <li><strong>Start with PhantomChat</strong> if you want a conversation nobody can read.</li>
-                <li><strong>Start with Phantombot</strong> if you want an agent that remembers your world and runs on your metal.</li>
+                <li><strong>Start with Phantombot</strong> if you want an agent that remembers your world and runs headless on your metal.</li>
             </ul>
         </section>
 
@@ -229,8 +230,8 @@
             <div class="footer-cols">
                 <div class="footer-col">
                     <p class="footer-head">Products</p>
+                    <a href="https://chat.phantomyard.ai">Phantomyard Desktop</a>
                     <a href="https://phantomops.app">PhantomOps</a>
-                    <a href="https://chat.phantomyard.ai">PhantomChat</a>
                     <a href="https://phantombot.bot">Phantombot</a>
                 </div>
                 <div class="footer-col">
